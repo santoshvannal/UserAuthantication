@@ -1,0 +1,47 @@
+.main{
+    width: 100%;
+    height: 100vh;
+}
+
+.main .navbar{
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to left,#00cccc, #cc0066);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.navbar .logo{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.navbar .menu ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    list-style: none;
+}
+.navbar .menu ul li{
+    margin-left: 15px;
+  
+}
+
+.navbar .menu ul li a{
+    text-decoration: none;
+    color: white;
+    border-radius: 15px;
+    padding: 8px;
+}
+
+.navbar .menu ul li a:hover{
+    background: white;
+    color: black;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+

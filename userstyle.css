@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #3525D3;
+    --white-color: #fff;
+    --black-color: #3c4a57;
+    --light-grey: #e4e8ee;
+}
+
+body{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.container{
+    padding: 50px 25px 0;
+    max-width: 668px;
+    width: 100%;
+    margin: auto;
+}
+
+.container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(-135deg, #ff45a2, #3ad9f5c1);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    z-index: -1;
+}
+
+.container .headline{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.container .headline h1{
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 52px;
+    color: white;
+}
+.form{
+    max-width: 350px;
+    width: 100%;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    border: solid 3px #e4e8ee;
+}
+.container .form-group{
+    margin-bottom: 15px;
+}
+
+.container .form-group input{
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 11px 15px;
+    height: 48px;
+    border-radius: 5px;
+    color:black;
+    border: 1px solid #e4e8ee;
+    width: 100%;
+}
+
+.container .form-group input:focus{
+    outline: none;
+}
+
+.container .form-group input::placeholder{
+    font-size: 14px;
+}
+
+.container .btn{
+    width: 100%;
+    margin: 15px 0 30px;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+    padding: 12px 29px;
+    border-radius: 25px;
+    background-image: linear-gradient(270deg, #3ad9f5c1, #ff45a2);
+    border:none;
+    color: white;
+    height: 48px;
+}
+
+.container .account-exist{
+    color: black;
+    border-top: 2px solid #e4e8ee;
+    padding-top: 20px;
+    text-align: center;
+   
+}
+
+.container .forget-password{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.container .forget-password .checkbox{
+    color: black;
+}
+
+.signup.inActive{
+    display: none;
+}
+
+.signin{
+    display: none;
+}
+
+.signin.active{
+    display: block;
+
+}
+
+
+
+@media (max-width:375px){
+    .container .forget-password{
+        font-size: 12px;
+    }
+}
